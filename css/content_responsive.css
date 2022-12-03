@@ -1,0 +1,1018 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : content_responsive.css
+ * description : 서브페이지 컨텐츠 반응형 CSS
+ * date : 2019-02-01
+******************************************************** */
+
+
+/* ******************  서브공통 ********************** */
+/* -------- 공통 스크롤바  -------- */
+@media all and (max-width:1220px){
+	.custom-scrollbar-wrapper .scroll-object{max-width:100%;}
+}
+@media all and (max-width:800px){
+	.custom-scrollbar-wrapper{position:relative;margin-right:-15px; cursor:move}
+	.custom-scrollbar-wrapper .scroll-object{max-width:none; width:800px; }
+	.custom-scrollbar-cover{display:block; position:absolute; top:0px; left:0px; right:0px; bottom:0px; background-color:rgba(0,0,0,0.5)}
+	.custom-scrollbar-cover .scroll-cover-txt{position:absolute; top:50%; left:0; width:100%; text-align:center; color:#fff; font-size:300; font-size:15px;}
+	.custom-scrollbar-cover .scroll-cover-txt i{font-size:30px; display:block; margin-bottom:20px; }
+}
+
+/* -------- 공통 Fixed Move Tab -------- */
+@media all and (max-width:1220px){
+	/* .fixed-move-tab-list.fixed{top:80px;} */
+}
+@media all and (max-width:800px){
+	.fixed-move-tab-list-wrapper,
+	.fixed-change-tab-list-wrapper{height:44px; }
+	.fixed-move-tab-list,
+	.fixed-change-tab-list{height:44px;}
+	.fixed-move-tab-link-wrapper{margin-bottom:40px}
+}
+@media all and (max-width:480px){
+	.fixed-move-tab-list.fixed,
+	.fixed-change-tab-list.fixed{top:34px;}
+	/* .fixed-move-tab-link-list.fixed{top:0;} */
+}
+
+/* -------- 공통 :: 버튼 -------- */
+@media all and (max-width:800px){
+    .cm-button-style04{}
+    .cm-button-style04 strong{font-size:15px; text-indent:14px}
+    .cm-button-style04 i{line-height:60px;}
+	/* 버튼 02 */
+	.business-btn-box{margin-top:42px;}
+	.business-btn-box a{width: 70%; max-width:350px; height: 49px; }
+	.business-btn-box a em {font-size:13px;line-height:18px; padding: 0 5px;}
+}
+
+/* -------- 공통 테이블 -------- */
+@media all and (max-width:800px){
+	.sub-tbl th, .sub-tbl td  {font-size: 13px; line-height: 20px;}
+	.sub-tbl01 tbody th {padding: 0 10px; }
+	.sub-tbl01 tbody td { padding:7px 10px; }
+	.sub-tbl02 thead th {padding:10px 0;}
+	.sub-tbl02 thead td {padding:10px 0;}
+}
+
+/* -------- 공통 Box Tab :: sub-tab01-list -------- */
+@media all and (max-width:800px){
+	.sub-tab01 {margin-bottom:50px;} 
+	.sub-tab01-list.menu02 {width:50%;}
+	.sub-tab01-list.menu04 {width:80%;}
+	.sub-tab01-list li:before {height: 17px; margin-top:-7.5px;}
+	.sub-tab01-list li a {font-size:13px; }
+	.sub-tab01-list li span {height:40px; }
+}
+@media all and (max-width:480px){
+	.sub-tab01-list {width:100%;}
+	.sub-tab01-list.menu02,.sub-tab01-list.menu04 {width:100%;}
+}
+
+/* -------- 공통 Box Tab :: sub-tab02-list -------- */
+@media all and (max-width: 800px){
+	.sub-tbl02-box{float:none; width:auto;}
+	.sub-tbl02-box:last-child th{display:none;}
+	.sub-tab02-list li span {height: 43px; }
+	.sub-tab02-list li span em {font-size:13px; }
+}
+
+/* -------- 공통 :: 작은 타이틀 -------- */
+@media all and (max-width:800px){
+	.small-tit {font-size:15px; margin-bottom: 12px;}
+	.small-tit span {padding-bottom:4px; }
+	.small-tit span:before {height:1px;}
+}
+
+
+/* ******************  BUSINESS ********************** */
+/* -------- Business - intro 공통  -------- */
+@media all and (max-width:1220px){
+	/* -------- Business - intro 공통 :: 컨텐츠박스 -------- */
+	.business-page .intro-con-box .inner .txt-con p {font-size:17px; line-height:28px;}
+	.business-page .intro-con-box .inner .txt-con p.txt02 {font-size: 20px; line-height:32px; }
+}
+@media all and (max-width:800px){
+	/* -------- Business - intro 공통 :: 타이틀 -------- */
+	.business-page .top-tit-box .tit01 {font-size: 15px; line-height:27px; margin-bottom:17.5px;}
+	.business-page .top-tit-box .tit02 {font-size: 15px; line-height:27px;}
+	.business-page .intro-tit-box {position:relative; display:table; width:100%; height:110px; }
+	.business-page .intro-tit-box .intro-bg-tit {font-size:110px;}
+	.business-page .intro-tit-box .intro-tit {font-size: 24px; }
+	/* -------- Business - intro 공통 :: 컨텐츠박스 -------- */
+	.business-page .intro-con-box .inner .img-con {float:none; width:100%; height:auto;  background:none;}
+	.business-page .intro-con-box .inner .img-con .img-m {display:block;}
+	.business-page .intro-con-box .inner .img-con .img-m img {max-width:100%; width:100%;}
+	.business-page .intro-con-box .inner .txt-con {float:none; width:100%; height:auto; }
+	.business-page .intro-con-box .inner .txt-con .txt-con-inner  {padding:  20px;}
+	.business-page .intro-con-box .inner .txt-con p {font-size:15px; line-height:25px;}
+	.business-page .intro-con-box .inner .txt-con p br {display:none;}
+	.business-page .intro-con-box .inner .txt-con p.txt02 {font-size: 18px; line-height:30px; }
+	/* -------- Business - intro 추가 -------- */
+	.business02-intro-tbl-box{margin-top:30px}
+	.business02-intro-tbl-box .small-tit{margin-bottom:35px;}
+	.business02-intro-tbl-box .sub-tbl th, .business02-intro-tbl-box .sub-tbl td{padding:5px;}
+}
+
+/* -------- Business - 제품소개 공통 :: 컨텐츠박스 -------- */
+@media all and (max-width:1220px){
+	.business-con-box {padding: 70px;}
+}
+@media all and (max-width:800px){
+	.business-con-box {padding: 15px;}
+	.business-con-box > .inner > .tit {font-size: 24px; }
+}
+
+@media all and (max-width:800px){
+	/* -------- Business - 적용제품 공통 :: 테이블 이미지 컨텐츠 -------- */
+	.business-page .table-img-con .img-con {width: 40%;}
+	.business-page .table-img-con .img-con .img-wrap {top: 40px; left:40px; bottom:40px; right:40px;}
+	.business-page .table-img-con .tbl-con {width: 60%; padding-left: 20px; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box; }
+	/* -------- Business - 적용제품 공통 :: 이미지테두리 & 넘버링 -------- */
+	.business-img-box .num {width:20px; height:20px; line-height:20px; font-size: 13px;}
+	.business-img-box .num.small {font-size: 13px;}	
+	/* -------- Business - 공통 :: 이미지 리스트 -------- */
+	.sub-item-list dl dt span {height: 35px; font-size:15px; }
+	/* -------- Business - 공통 :: 삼각형 소제목 -------- */
+	.tri-tit {font-size: 15px; padding-left: 15px; margin-bottom:15px;}
+}
+
+/* -------- Business :: 전자사업  -------- */
+@media all and (max-width:1220px){
+	/* 전자사업 :: 사업소개 */
+	.business01-intro-list li dd {padding: 0 20px 65px;}
+	/* 전자사업 :: 적용제품 */
+	.apply-tv-con .apply-tv-item .top-img .top-img-m {/* display:block; */}
+	.apply-tv-con .apply-tv-item .top-img .top-img-m img {max-width:100%; }
+	.apply-tv-con .apply-tv-item .top-txt-box {position:static; margin:50px 0 0; width:auto;}
+	.apply-tv-con .apply-tv-item .top-txt-box .txt-box {position:static;  width:100%;  float:left; margin:0; }
+	.apply-tv-con .apply-tv-item01 .top-txt-box {margin:50px -2% 0; }
+	.apply-tv-con .apply-tv-item01 .top-txt-box .txt-box {width:46%; margin:0 2%; }
+}
+@media all and (max-width:1024px){
+	/* 전자사업 :: 적용제품 :: 상단 설명추가 */
+	.business-info-bottom-container dl dt,
+	.business-info-bottom-container dl dd{float:none; width:auto; }
+	.business-info-bottom-container dl dt{margin-bottom:10px;}
+	.business-info-bottom-container dl dt br{display:none}
+	.business-info-bottom-container dl dt span{margin-left:10px;}
+}
+@media all and (max-width:800px){
+	/* 전자사업 :: 사업소개 */
+	 .intro-con-box  {margin-top:30px;}
+	.business01-intro-con {margin-top:62px;}
+	.business01-intro-list li { width:50%; margin-bottom: 20px; }
+	.business01-intro-list li.item03 dl{border:0;}
+	.business01-intro-list li dt {padding: 18px 0 ; }
+	.business01-intro-list li dd {padding: 0 15px 30px;}
+	.business01-intro-list li .tit {font-size:15px; line-height:30px; }
+	.business01-intro-list li .txt {font-size:13px; line-height:22px;  margin-top:10px;}
+	/* 전자사업 :: 제품소개 */
+	.business01-product-list { margin:0 -1.4%;}
+	.business01-product-list li {float:none; display:inline-block; width:30%; margin: 0 1.4% 20px;}
+	.business01-product-list li a {display:block;}
+	.business01-product-list li .item-bg {width:100%; height:392px;}
+	.business01-product-list li .item-bg img {display:none;}
+	.business01-product-list li.item01 .item-bg { background:url("/images/content/business01_product_img_01.jpg") center no-repeat; background-size:cover;}
+	.business01-product-list li.item02 .item-bg { background:url("/images/content/business01_product_img_02.jpg") center no-repeat; background-size:cover;}
+	.business01-product-list li.item03 .item-bg { background:url("/images/content/business01_product_img_03.jpg") center no-repeat; background-size:cover;}
+	.business01-product-list li.item04 .item-bg { background:url("/images/content/business01_product_img_04.jpg") center no-repeat; background-size:cover;}
+	.business01-product-list li.item05 .item-bg { background:url("/images/content/business01_product_img_05.jpg") center no-repeat; background-size:cover;}
+	.business01-product-list .item-box .tit-box .tit {font-size: 14px; height: 63px; } 
+	/* 전자사업 :: 적용제품 :: 상단 설명추가 */
+	.busienss-detail-info-wrapper{margin-bottom:45px}
+	.business-info-top-container{padding:35px 15px; background-size:cover !important; background-attachment: initial  !important;}
+	.business-info-top-container dl dt{font-size:30px; padding-bottom:30px}
+	.business-info-top-container dl dt .kr{font-size:22px}
+	.business-info-top-container dl dt:before{width:42px; margin-left:-21px; height:1px; bottom:17px;}
+	.business-info-top-container dl dd{font-size:13px;}
+	.business-info-top-container dl dd p br{display:none;}
+	.business-info-bottom-container dl{padding:20px 0;}
+	.business-info-bottom-container dl dt{font-size:15px}
+	.business-info-bottom-container dl dt span{opacity:0.7;filter:Alpha(opacity=70); font-size:13px}
+	.business-info-bottom-container dl dd{font-size:13px;}
+	.business-info-bottom-container dl dd br{display:none;}
+	/* 전자사업 :: 적용제품 */
+	.apply-tit {font-size:20px; padding-bottom:30px;}
+
+	/* TV*/
+	.apply-tv-con-wrap {margin-top:45px;}
+	.apply-tv-con .apply-tit {font-size:20px; padding-bottom:30px;}
+	.apply-tv-con .apply-tit:before {width: 45px; margin-left: -22.5px;}
+	.apply-tv-con .apply-tv-item {padding: 37.5px 0; }
+	.apply-tv-con .apply-tv-item .top-txt-box .txt-box {height:59.5px;}
+	.apply-tv-con .apply-tv-item .top-txt-box .txt-box p {font-size:13px; }
+	.apply-tv-con .apply-tv-item .top-txt-box .txt-box p.name {margin-bottom: 6px;}
+	.apply-tv-con .apply-tv-item01 .top-txt-box {margin: 25px -2% 0; }
+	.apply-tv-con .apply-tv-item .table-img-con01 {margin-top:35px;}
+	.apply-tv-con .apply-tv-item .table-img-con .img-con {float:none; width:100%; }
+	.apply-tv-con .apply-tv-item .table-img-con .img-con .inner {padding-top:40.74%;}
+	.apply-tv-con .apply-tv-item .table-img-con .img-con span {top:20px; left:20px; bottom:20px; right:20px; }
+	.apply-tv-con .apply-tv-item .table-img-con .tbl-con {float:none; width:100%; margin-top:20px; padding:0;}
+	/*가전제품*/
+	.apply-home-con {padding:30px 0;}
+	.apply-home-con .apply-home-list .item-img .img-wrap {top:30px; left:30px; right:30px; bottom:30px;}
+	.apply-home-con01 .apply-home-list .item-inner {/* padding:0; */ padding: 0 15px;}
+	.apply-home-con01 .apply-home-list .item-inner .img-wrap {top:10px; left:10px; right:10px; bottom:10px;}
+	.apply-home-con03 .apply-home-list .item-img .img-wrap {bottom:0;}
+	/*무선충전*/
+	.apply-charge-con .apply-charge-list .item-img .img-wrap {top:20px; left:20px; right:20px; bottom:20px;}
+	.apply-charge-con01 .apply-charge-list02 .item-img .img-wrap {top:30px; left:30px; right:30px; bottom:30px; }
+	.apply-charge-con01 .sub-tbl01 {margin-top:20px;}
+	/* 전장 (ECU)*/
+	.apply-ecu-con .ecu-img-box { padding:38px 0 29px;}
+	.apply-ecu-con .table-img-con .img-con {width:189px;}
+	.apply-ecu-con .table-img-con .tbl-con {width:calc(100% - 189px);}
+	.apply-ecu-con .table-img-con .img-con .inner {padding-top: 35%;}
+	.apply-ecu-con .table-img-con02 {margin-top:15px;}
+	.apply-ecu-con01 .table-img-con .img-con .inner {padding-top: 77.77%;}
+	.apply-ecu-con01 .table-img-con .img-con .img-wrap {top:20px; left:20px; right:20px; bottom:20px;}
+	.apply-ecu-con02 {margin-top: 30px;}
+	.apply-ecu-con02 .sub-tbl {margin-top:15px;}
+	/* 전자칠판 */
+	.apply-wb-con {margin-top:30px;}
+	.apply-wb-list dl dt span {height: 35px; font-size:15px; }
+	.apply-wb-con .sub-tbl {margin-top:15px;}
+}
+@media all and (max-width:640px){
+	/* 전자사업 :: 적용제품 */
+	.business-page .table-img-con .img-con {width: 100%; float:none;}
+	.business-page .table-img-con .tbl-con {width: 100%; float:none; padding-left:0; padding-top: 20px;}
+	/*가전제품*/
+	.apply-home-con .table-img-con {margin-top:15px;}
+	.apply-home-con02 .table-img-con .img-con .inner {padding-top:32%;}
+	.apply-home-con03 .table-img-con .img-con .inner {padding-top: 22%;}
+	.apply-home-con04 .table-img-con .img-con .inner {padding-top:30%; }
+	/* 전장 (ECU) */
+	.apply-ecu-con01 .table-img-con .img-con .inner {padding-top: 35%;}
+	.apply-ecu-con01 .table-img-con .img-con .img-wrap {top:25px; left:25px; right:25px; bottom:25px;}
+	.apply-ecu-con02 .apply-ecu-list {margin:0 -1.02%; text-align:center; }
+	.apply-ecu-con02 .apply-ecu-list li {float:none; display:inline-block; width:30%; margin:0 1.02% 10px; border:1px solid #ddd; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box; }
+	/* 전자칠판 */
+	.apply-wb-list {margin:-1%;}
+	.apply-wb-list li { width: 48%; margin: 1%; }
+
+	.apply-wb-con .table-img-con .clearfix {display:block; }
+}
+@media all and (max-width:480px){
+	/* 전자사업 :: 사업소개 */
+	.business01-intro-list li { float:none; width:100%; border-bottom: 1px solid #e5e5e5;}
+	.business01-intro-list li.item04 {border-bottom:0;}
+	.business01-intro-list li dl {border:0; }
+	.business01-intro-list li dt img {height:33.6px;}
+	/* 전자사업 :: 제품소개 */ 
+	.business01-product-list { margin:0 -1.7%;}
+	.business01-product-list li { width:46%; margin: 0 1.7% 20px;}
+	/* 전자사업 :: 적용제품 */ 
+	.business-page .table-img-con .img-con .img-wrap {top:20px; left:20px; right:20px; bottom:20px;}
+	/* 가전 */
+	.apply-home-con .apply-home-list {margin:0;}
+	.apply-home-con .apply-home-list li {float:none; width:100%; margin:0 0 10px;}
+	.apply-home-con .apply-home-list .item-img {padding-top: 45%;}
+	.apply-home-con .table-img-con {margin-top:50px;}
+	.apply-home-con01 .apply-home-list .top-img {padding-top: 45%;}
+	.apply-home-con01 .apply-home-list .bottom-img {padding-top:25%;}
+	/*무선충전*/
+	.apply-charge-con .apply-charge-list .item-img .img-wrap {top:10px; left:10px; right:10px; bottom:10px;}
+	.apply-charge-con01 .apply-charge-list {margin:0;}
+	.apply-charge-con01 .apply-charge-list  li {float:none; width:100%; margin:0; margin-bottom:10px;}
+	.apply-charge-con01 .apply-charge-list .item-img{padding-top: 44%;} 
+	.apply-charge-con01 .apply-charge-list02  {margin:0;}
+	.apply-charge-con01 .apply-charge-list02  li {float:none;  width:100%; padding:0 15px; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box;}
+	.apply-charge-con01 .apply-charge-list02  li:before {display:none;}
+	.apply-charge-con01 .apply-charge-list02  li .item-inner {  border-top: 1px solid #ddd; }
+	.apply-charge-con01 .apply-charge-list02  li.item01 .item-inner {border-top:0;}
+	.apply-charge-con01 .apply-charge-list02 .item-img {padding-top: 38%;}
+	.apply-charge-con01 .apply-charge-list02 .item-img .num { left:-15px;}
+
+	.apply-charge-con02 .apply-charge-list03 li {float:none; width:100%; margin:0 0 3% 0}
+	.apply-charge-con02 .apply-charge-list03 .top-img{padding-top:50%}
+}
+
+/* -------- Business :: 화학사업  -------- */
+@media all and (max-width:1220px){
+	/* 화학산업 :: 연구소 */
+	.business02-research-con .intro-tit-box {height:154px;}
+	.business02-research-con .intro-tit-box .intro-bg-tit {font-size: 154px;}
+	.business02-research-con .intro-tit-box .intro-tit {font-size: 34px;}
+}
+@media  all and (max-width:800px){
+	/* 화학산업 :: 사업소개 */
+	.business02-intro-page .intro-con-box .txt-con .txt01 {margin-bottom: 20px;}
+	.business02-intro-con {margin-top: 30px; }
+	.business02-intro-con .business02-intro-list {margin-top:30px;}
+	.business02-intro-con .business02-intro-list li dl dt span {height:126px; }
+	.business02-intro-con .business02-intro-list li dl dt span em img {height: 34.3px;}
+	.business02-intro-con .business02-intro-list li dl dd  {height:126px; }
+	.business02-intro-con .business02-intro-list li dl dd .txt-box .tit  {font-size: 15px; line-height:24px; }
+	.business02-intro-con .business02-intro-list li dl dd .txt-box .txt  {font-size: 13px; line-height: 23px; }
+	/* 화학산업 :: 제품소개 */
+	.business02-product-con {margin-top: 50px;}
+	.business02-product-con .business-con-box .txt {font-size: 15px; line-height: 22px; margin-top: 17.5px;  }
+	.business02-product-con .business-con-box .txt br {display:none;}
+	.business02-product-con .business-con-box .info-box {margin-top:35px;}
+	.business02-product-con .business-con-box .info-box li {padding:20px 0;}
+	.business02-product-con .business-con-box .info-box .info-box-txt {font-size:15px; line-height: 22px;}
+	.business02-product-con .business-con-box .info-box .info-box-txt .txt01 {}
+	.business02-product-con .business-con-box .info-box .info-box-txt .txt02 {padding-left:10px;}
+	.business02-product-con .business-con-box .info-box .info-box-txt .txt02 .info-ex-txt {font-size:13px; line-height:20px;}
+	/* 화학산업 :: 연구소 */
+	.business02-research-con .intro-tit-box {height:90px;}
+	.business02-research-con .intro-tit-box .intro-bg-tit {font-size: 90px;}
+	.business02-research-con .intro-tit-box .intro-tit {font-size: 28px;}
+	.business02-research-con .intro-con-box .inner .txt-con p.txt02 {font-size: 15px; line-height:27px; margin-top:10px;}
+	.business02-research-con .fixed-move-tab-list-wrapper {margin-top: 57.5px;}
+	.research-con .business-con-box .tit {padding-bottom:45px;}
+	.research-con .business-con-box .img-con {width: 200px;}
+	.research-con .business-con-box .txt-con {width: calc(100% - 200px);}
+	.research-con .business-con-box .txt-con .txt-list .txt-list-tit {font-size:14px; margin-bottom:7px;}
+	.research-con .business-con-box .txt-con .txt-list li p {font-size:13px; line-height: 26px; padding-left: 10px;}
+	.research-con .business-con-box .txt-con .txt-list li p:before {top: 12px;}
+	.research-con .business-con-box .txt-con .txt-list02 {margin-top:20px;}
+	.research-con01 .img-box {margin-top:45px;}
+}
+@media all and (max-width:640px){
+	/* 화학산업 :: 연구소 */
+	.research-con .business-con-box .img-con {width: 100%; float:none; text-align:center;}
+	.research-con .business-con-box .txt-con {width:100%; float:none; padding:0; margin-top:50px;}
+}
+@media all and (max-width:480px){
+	.business02-intro-con .business02-intro-list li dl {padding:10px 0;}
+	/* 화학산업 :: 연구소 */
+	.business02-research-con .business-con-box {padding: 35px 15px;}
+	.business02-research-con .intro-tit-box {height:70px;}
+	.business02-research-con .intro-tit-box .intro-bg-tit {font-size:60px;}
+	.business02-research-con .intro-tit-box .intro-tit {font-size: 24px;}
+}
+
+/* -------- Business ::  TG 사업 -------- */
+@media all and (max-width:1220px){
+	/* TG 사업 :: 사업소개 */
+	.business03-intro-con01 .business03-intro-list li .inner-box .inner {padding: 0 40px;}
+	.business03-intro-con02 .con-list .item03 .item-list-box .item-list-con dt {-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box; }
+}
+
+@media all and (max-width:800px){
+	/* TG 사업 :: 사업소개 */
+	.business03-intro-page .intro-con-box .txt01 {margin-bottom:10px;}
+	.business03-intro-con01 {margin-top:35px; }
+	.business03-intro-con01 .business03-intro-list li .inner-box {height: 70px;}
+	.business03-intro-con01 .business03-intro-list li .inner-box .inner {padding: 0 20px;}
+	.business03-intro-con01 .business03-intro-list li .inner-box .inner .num {font-size: 24px; margin-top: -12px; }
+	.business03-intro-con01 .business03-intro-list li .inner-box .inner .txt {font-size:14px; padding-left: 20px; }
+	.business03-intro-con01 .center-icon {height: 210px;}
+	.business03-intro-con01 .center-icon dl dt img {height: 42.7px;}
+	.business03-intro-con01 .center-icon dl dd {font-size:14px; margin-top:10px;}
+	.business03-intro-con02 {margin-top:55px;} 
+	.business03-intro-con02 .con-list {margin-top:  30px;}
+	.business03-intro-con02 .con-list .item-tit {font-size:15px;}
+	.business03-intro-con02 .con-list .item01 .gray-box {padding: 15px 20px; margin:15px 0; }
+	.business03-intro-con02 .con-list .item01 .gray-box p {font-size:14px; }
+	.business03-intro-con02 .con-list .item01 .img-box {margin:0; }
+	.business03-intro-con02 .con-list .item01 .img-box .img-con {float:none; width:100%; margin:0; padding:15px 0; }
+	.business03-intro-con02 .con-list .item01 .img-box .img-con .img-box-tit {font-size:15px; }
+	.business03-intro-con02 .con-list .item01 .img-box .img-con img { margin-top:20px; max-width:70%;}
+	.business03-intro-con02 .con-list .item02 {margin-top: 47.5px;}
+	.business03-intro-con02 .con-list .item02 .item-txt {font-size:14px; margin-top:10px;}
+	.business03-intro-con02 .con-list .item03 {margin-top: 50px;}
+	.business03-intro-con02 .con-list .item03 .item-list-box {margin:-1% 0;}
+	.business03-intro-con02 .con-list .item03 .item-list-box .item-list-con {width:50%; margin:1% 0;}
+	.business03-intro-con02 .con-list .item03 .item-list-box .item-list-con dd {font-size:14px; margin-top:10px;}
+	.business03-intro-con02 .con-list .item03 .item-list-box .item-list-con dd:after {width: 14px; height:9px; right:-10px; top: 2px; background-size:cover;}
+	.business03-intro-con02 .con-list .item03 .item-list-box .item-list-con.con02 dd:after {display:none;}
+	.business03-intro-con02 .con-list .item04 {margin-top: 57.5px;}
+	.business03-intro-con02 .con-list .item04 .item-txt {font-size:15px; line-height: 1.2; margin: 22px 0;}
+	.business03-intro-con02 .con-list .item04 .img-box {text-align:center;}
+	.business03-intro-con02 .con-list .item04 .img-box .left-img , .business03-intro-con02 .con-list .item04 .img-box .right-img {float:none; width:100%;}
+	/* TG 사업 :: 제품소개 */
+	.business03-product-con {margin-top:35px;}
+	.business03-product-con .tit-sub {font-size:16px; margin-top:10px;}
+	.business03-product-con .img-con {margin-top:20px; padding: 15px 15px 0;}
+	.business03-product-con .img-con .check-tit {font-size:14px; padding-left: 17px;}
+	.business03-product-con .img-con .check-tit i {font-size:12px;}
+	.business03-product-con .img-con .img-wrap {margin-top:15px;}
+	.business03-product-con.product-con03 .img-con01 .img-wrap img {margin-top:15px;}
+	.business03-product-con.product-con03 .img-con02 .img-wrap dl {width:50%;}
+	.business03-product-con.product-con03 .img-con02 .img-wrap {margin:15px 0 0;}
+	.business03-product-con.product-con03 .img-con02 .img-wrap dl.item03 {border-left:0; border-top:1px solid #ddd; }
+	.business03-product-con.product-con03 .img-con02 .img-wrap dl.item04 {border-top:1px solid #ddd; }
+	.business03-product-con.product-con03 .img-con02 .img-wrap dl dd {font-size:13px; padding: 15px 0;}
+	.business03-product-con.product-con03 .img-con02 .img-wrap dl dt span { top:10px; left:10px; right:10px; bottom:10px; }
+	.business03-product-con.product-con05 .img-wrap {margin-top:30px;}
+	.business03-product-con.product-con05 .img-wrap  img {height:142px;}
+	.business03-product-con.product-con05 .img-wrap dd {font-size:13px; margin-top: 20px;}
+
+	/* TG 사업 :: 제품소개 수정NH (200316)*/
+	.business03-product-page .business-info-top-container.h270 {height:auto;}
+	.business03-product-page .business-info-top-container {height:auto; padding: 35px 15px; display:block; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box; }
+	.business03-product-page .business-info-top-container dl {display:block;} 
+	.business03-product-page .business03-product-con {margin-top: 75px;}
+	.business03-product-page .business03-product-con .img-wrap {margin-top: 20px; }
+	.business03-product-page .product-con01 {margin-top:25px;}
+	.business03-product-page .product-con01 .sub-item-list {margin-top: 20px;}
+	.business03-product-page .product-con04 .img-wrap ul li {float:none; text-align:center;}
+	.business03-product-page .product-con04 .img-wrap ul li.left-img {width: 100%;}
+	.business03-product-page .product-con04 .img-wrap ul li.right-img {width: 100%;padding:0 20.25%;}
+	.business03-product-page .product-con04 .img-wrap .tri-tit {margin-bottom:15px;}
+
+	/* TG사업 :: 제품소개 추가 MH (200317) */
+	.business03-prd-intro-list{margin:0;}
+	.business03-prd-intro-list li{width:auto; margin:0 0 10px 0;}
+	.business03-prd-intro-list li:last-child{width:auto; }
+}
+@media all and (max-width:480px){
+	/* TG 사업 :: 사업소개 */
+	.business03-intro-con01 .business03-intro-list {float:none;width:100%; }
+	.business03-intro-con01 .business03-intro-list li:before {display:none;}
+	.business03-intro-con01 .center-icon {float:none;width:100%; height:auto; padding: 30px 0;}
+	/* TG 사업 :: 제품소개 */
+/* 	.business03-product-page .sub-tab02-list li span {height: 60px;} */
+	.business03-product-con .business-con-box {padding: 35px 15px; }
+	.business03-product-con .img-con {padding: 15px 0 0;}
+	.business03-product-con.product-con03 .img-con01 .img-wrap .left-img {float:none; width:100%; margin:0 0 30px;}
+	.business03-product-con.product-con03 .img-con01 .img-wrap .right-img {float:none; width:100%; margin:0;}
+}
+
+/* -------- Business :: 자율주행사업 -------- */
+@media all and (max-width:1220px){
+	/*  자율주행사업 :: 사업소개 */
+	.business04-intro-page .intro-tit-box {height:100px;}
+	.business04-intro-page .intro-tit-box .intro-bg-tit {font-size:100px;}
+	.business04-intro-page .intro-tit-box .intro-tit {font-size:34px;}
+	/* 자율주행사업 :: 제품소개 */
+	.business04-product-con01 .con-list  {margin:0 -2%;}
+	.business04-product-con01 .con-list li {width:46%; margin:0 2% 10px;}
+	.business04-product-con01 .con-list .tit-img {padding-top:46.2%;}
+	.business04-product-con01 .con-list .tit-img span {top:10px; left:10px; right:10px; bottom:10px;}
+}
+@media all and (max-width:800px){
+	/* 자율주행사업 :: 사업소개 */
+	.business04-intro-page .intro-tit-box {height:70px;}
+	.business04-intro-page .intro-tit-box .intro-bg-tit {font-size:70px; letter-spacing:-5.5px;}
+	.business04-intro-page .intro-tit-box .intro-tit {font-size:20px; }
+	.business04-intro-con {margin-top: 42.5px;}
+
+	/* 자율주행사업 :: 제품소개 */
+	.business04-product-con {margin-top:50px;}
+	.business04-product-con .business-con-box {padding: 35px 15px;}
+	.business04-product-con .img-con {margin: 25px 0 30px; padding-top:30px;}
+	.business04-product-con .img-tit {height: 49px;}
+	.business04-product-con .img-tit p {font-size:20px;}
+	.business04-product-con .con-tit {font-size:15px;}
+	.business04-product-con .function-box .con-txt-box .tit {font-size:14px; line-height:20px; }
+	.business04-product-con .function-box .con-txt-box .txt {font-size:13px; line-height:20px;}
+	.business04-product-con .con-txt-box ul {margin-top:15px;}
+	.business04-product-con .con-txt-box ul li {float:none; width:100%; padding:0; margin-bottom: 15px;}
+	.business04-product-con01 .con-list .tit-box {height:42px;}
+	.business04-product-con01 .con-list .tit-box p {font-size:13px;}
+	.business04-product-con01 .con-list .txt-box p {font-size:13px; line-height:23px; padding-left: 7px; }
+	.business04-product-con02 .con02 .con-txt-box .tit {font-size:13px; line-height:18px;}
+	.business04-product-con02 .con02 .con-txt-box .txt {font-size:13px; line-height:18px;  }
+	.business04-product-con02 .con02 .left-con {float:none; width:100%;}
+	.business04-product-con02 .con02 .left-con dt img {width:100%;}
+	.business04-product-con02 .con02 .right-con {float:none; width:100%; padding-left:0;  margin-top: 30px;}
+	.business04-product-con02 .con02 .right-con .con-list dd {padding-left: 20px;}
+	.business04-product-con03 .con02 .img-wrap {margin-top:30px;}
+	/* 자율주행사업 :: 연구소 V2X */
+	.business04-research-con {margin-top: 30px; padding-top: 20px;}
+	.business04-research-con .tit-box {padding-bottom: 20px; }
+	.business04-research-con .tit-box .con-tit {font-size: 17px; float:none; }
+	.business04-research-con .tit-box .con-tit-right {font-size:13px; line-height: 25px; float:none; text-align:left; margin-top:15px; }
+	.business04-v2x-con .gray-con-box {padding: 20px 15px;}
+	.business04-v2x-con .gray-con-box .gray-con-tit {font-size:16px; line-height: 22px;}
+	.business04-v2x-con .gray-con {margin-top: 17.5px;}
+	.business04-v2x-con .gray-con .red-tit {font-size:14px; line-height: 28px;padding-left: 15px;}
+	.business04-v2x-con .gray-con .red-tit i {font-size:13px; line-height:28px;}
+	.business04-v2x-con .gray-con li p {height: 38px; }
+	.business04-v2x-con .gray-con li p span {font-size:13px;}
+	.business04-v2x-con .gray-con li,.business04-v2x-con .gray-con01 .item03 {width: 32%;}
+	.business04-v2x-con .gray-con03 .red-tit {line-height:18px; }
+	.business04-v2x-con .gray-con03 .red-tit i {top:0px; line-height:18px;}
+	.business04-v2x-con .img-box {margin-top:20px;}v
+	.business04-v2x-con .img-box .img-tit {font-size:14px; margin-bottom:10px;}
+	.business04-v2x-con .con03 .con-box {padding-bottom:25px;}
+	.business04-v2x-con .con03 .con-box .tit {font-size:16px; line-height:20px; padding:20px 0; }
+	.business04-v2x-con .con03 .con-box .con-list li {width: 50%;}
+	.business04-v2x-con .con03 .con-box .con-list li:before {display:none;}
+	.business04-v2x-con .con03 .con-box .con-list dt .icon-img img {height:42.7px;}
+	.business04-v2x-con .con03 .con-box .con-list .txt-box .txt01 {font-size:14px; padding-top:10px;}
+	.business04-v2x-con .con03 .con-box .con-list .txt-box .txt02 {font-size:13px; line-height: 18px;}
+	.business04-v2x-con .con03 .bottom-txt {font-size:13px; line-height: 23px; margin-top:15px;}
+	/* 자율주행사업 :: 연구소 ADAS */
+	.business04-adas-con .business-con-box {padding: 35px 15px;}
+	.business04-adas-con .img-box .txt {font-size:13px; line-height: 23px;}
+	.business04-adas-con .img-tit {font-size:14px; line-height:1.3;}
+
+	.business04-adas-con .con01 .img-box-wrap {margin-top:20px;}
+	.business04-adas-con .con01 .img-tit {font-size:16px;}
+	.business04-adas-con .con01 .img-box {float:none; width:100%; text-align:center;}
+	.business04-adas-con .con01 .img-box .txt-box {margin:15px 0 20px; text-align:left;}
+	.business04-adas-con .con01 .img-box-left img {max-height:154px;}
+	.business04-adas-con .con01 .img-box-right {margin-top:50px; padding:0;}
+	.business04-adas-con .con02 .img-box-wrap {margin-top:25px;}
+	.business04-adas-con .con02 .img-box-wrap .left-con {float:none;width:100%;}
+	.business04-adas-con .con02 .img-box-wrap .right-con {float:none; width:100%; padding:0; margin-top:30px;}
+	.business04-adas-con .con02 .img-box {margin-top:15px;}
+
+	.business04-adas-con .con03 .img-box01 {margin-top:20px;}
+	.business04-adas-con .con03 .img-box01 .txt-box {margin-top: 10px;}
+	.business04-adas-con .con03 .img-box01 .txt-box .img-tit {margin-bottom:10px;}
+	.business04-adas-con .con03 .img-box02 {margin-top: 30px;}
+	.business04-adas-con .con03 .img-box02 .txt-box {padding-left: 0;  }
+	.business04-adas-con .con03 .img-box02 .txt-box .tit {position:static; font-size: 16px; margin-bottom: 15px; }
+	
+	.business04-adas-con .con04 .img-box01 {margin-top:20px;}
+	.business04-adas-con .con04 .img-box01 .txt-box {margin-bottom: 20px;}
+	.business04-adas-con .con04 .img-box02 {margin-top: 25px;}
+	.business04-adas-con .con04 .img-box02 .txt-box {margin-bottom: 20px;}
+	.business04-adas-con .con04 .img-box02 .txt-box .tit {font-size: 16px; margin-bottom: 11px;  }
+	.business04-adas-con .con04 .img-list li.item01 {float:none; width: 100%;}
+	.business04-adas-con .con04 .img-list li.item02 {float:right; width: 100%; margin-top:30px;}
+	.business04-adas-con .con04 .img-list li dl dd {margin-top:10px; font-size: 13px; }
+
+}
+@media all and (max-width:640px){
+	/* 자율주행사업 :: 제품소개 */
+	.business04-product-con01 .con-list  {margin:0;}
+	.business04-product-con01 .con-list li {width:100%; float:none; margin:0 0 10px;}
+	.business04-product-con01 .con-list .tit-img {padding-top:33.33%;}
+}
+@media all and (max-width:480px){
+	/* 자율주행사업 :: 사업소개 */
+	.business04-intro-page .intro-tit-box .intro-bg-tit {font-size:60px;}
+	.business04-intro-page .intro-tit-box .intro-tit {font-size:20px; }
+	.sub-item-list {margin:0;}
+	.sub-item-list li { width: 100%; margin: 0 0 10px; }
+	/* 자율주행사업 :: 연구소 V2X */
+	.business04-v2x-con .business-con-box {padding: 35px 15px;}
+	.business04-v2x-con .con03 .con-box .con-list li {width: 100%; border-top: 1px solid #ddd; padding: 15px 0; } 
+	.business04-v2x-con .con03 .con-box .con-list li dt {float:left; width: 20%; padding:0;}
+	.business04-v2x-con .con03 .con-box .con-list li dt .icon-box {padding:0; border:0;}
+	.business04-v2x-con .con03 .con-box .con-list li dd {float:left; width: 80%; padding:0; text-align:left; display:table; height:70px; }
+	.business04-v2x-con .con03 .con-box .con-list li.item01 {border-top:0;}
+	.business04-v2x-con .con03 .con-box .con-list .txt-box {display:table-cell; vertical-align:middle;}
+	.business04-v2x-con .con03 .con-box .con-list .txt-box .txt01 {padding-top:0;}
+	.business04-v2x-con .con03 .con-box .con-list .txt-box .txt02 {padding-top:5px;}
+}
+
+
+/* ****************** Company  ********************** */
+/* -------- Compay :: 회사소개 -------- */
+@media all and (max-width:1220px){
+	/* ceo greeting :: 상단 */
+	.ceo-top-content .ceo-top-txt{margin-bottom:20px;}
+	.ceo-top-content .ceo-photo-con{right:0px; top:80px;}
+	.ceo-top-content .ceo-photo-con img{width:345px}
+	.ceo-top-content .ceo-txt-con{padding:0 350px 0 30px}
+	.ceo-top-content .ceo-txt-con br{display:none}
+	/* ceo greeting :: 하단 */
+	.ceo-bottom-content .ceo-bottom-txt1 br,
+	.ceo-bottom-content .ceo-bottom-txt2 br{display:none}
+	/* ceo greeting :: 아이콘리스트 */
+	.ceo-icon-list-con li{text-align:center;}
+	.ceo-icon-list-con li .icon{display:block; margin:0 0 10px 0}
+}
+@media all and (max-width:800px){
+	/* ceo greeting :: 상단 */
+	.ceo-top-content{text-align:center; margin-bottom:30px; padding-top:0}
+	.ceo-top-content .ceo-top-txt{font-size:23px}
+	.ceo-top-content .ceo-top-txt br{display:none;}
+	.ceo-top-content .ceo-photo-con{position:static}
+	.ceo-top-content .ceo-photo-con img{width:246px}
+	.ceo-top-content .ceo-sign-con{position:static; margin-top:0; margin-bottom:20px;}
+	.ceo-top-content .ceo-sign-con .ceo-name{margin-bottom:10px}
+	.ceo-top-content .ceo-sign-con .ceo-name b{letter-spacing:5px;}
+	.ceo-top-content .ceo-sign-con img{width:100px}
+	.ceo-top-content .ceo-top-txt-box{padding-top:0; height:auto; background:url(/images/content/ceo_top_txt_bg_m.jpg) repeat-x; background-size:auto 100%}
+	.ceo-top-content .ceo-txt-con{padding:20px; font-size:15px;}
+	/* ceo greeting :: 하단 */
+	.ceo-bottom-content{margin-bottom:45px; text-align:center; }
+	.ceo-bottom-content .ceo-bottom-txt1,
+	.ceo-bottom-content .ceo-bottom-txt2{font-size:15px}
+	.ceo-bottom-content .ceo-bottom-txt1{padding-right:0}
+	.ceo-bottom-content .ceo-bottom-txt2{/* font-size:19px; */ margin:30px 0;}
+	.ceo-bottom-content .ceo-bottom-txt1 span{margin-top:20px}
+	/* ceo greeting :: 아이콘리스트 */
+	.ceo-icon-list-con li{text-align:center;}
+	.ceo-icon-list-con li dl dt{font-size:20px}
+	.ceo-icon-list-con li dl dd{font-size:12px}
+}
+@media all and (max-width:480px){
+	/* ceo greeting :: 아이콘리스트 */
+	.ceo-icon-list-con li{width:50%; margin-bottom:3%}
+	.ceo-icon-list-con li .icon img{height:45px}
+}
+
+/* -------- Compay :: 비전 -------- */
+@media all and (max-width:1220px){
+	/* 비전 :: 공통 */
+	.vision-container img{max-width:100%;}
+}
+@media all and (max-width:800px){
+	/* 비전 :: 공통 */
+	.vision-container{padding-bottom:50px}
+	.vision-container .small-tit{margin-bottom:40px}
+	/* 비전 :: VISION */
+	.vision-top-tit {font-size:28px; margin-bottom: 15px;}
+	.vision-top-txt{font-size:17px; margin-bottom:40px}
+	.vision-top-txt strong{display:block; font-size:17px; line-height: 28px; margin-top:5px}
+	.vision-top-txt strong b{font-size:19px}
+	.vision-top-txt span {font-size: 19px;  line-height: 28px; }
+	/* 비전 :: SLOGAN */
+	.slogan-top-txt{font-size:29px}
+	.slogan-top-txt br{display:block}
+	/* 비전 :: 경영이념 */
+	.ideo-container{min-height:auto; padding-top:15%; background-size:contain}
+	/* 비전 :: 경영방침 */
+	.business-policy li strong{font-size:14px; margin-top:10px; line-height:1.3}
+}
+/* -------- Compay :: CI -------- */
+@media all and ( max-width:1024px ){
+	.ci-logo-detail-box .ci-logo-box img{max-width:100%}
+	/* 로고 :: 설명 */	
+	.ci-logo-detail-box .ci-detail-txt-info dt,
+	.ci-logo-detail-box .ci-detail-txt-info dd{float:none; width:auto}
+	.ci-logo-detail-box .ci-detail-txt-info dt{margin-bottom:10px}
+	/* 로고 :: 슬로건 */	
+	.ci-logo-detail-box .slogn-detail-txt-info dt,
+	.ci-logo-detail-box .slogn-detail-txt-info dd{float:none; width:auto}
+	.ci-logo-detail-box .slogn-detail-txt-info dt{margin-bottom:10px}
+}
+@media all and ( max-width:800px ){
+	.ci-logo-detail-wrapper{margin-bottom:35px; padding-bottom:40px;}
+	.ci-logo-detail-box{margin-top:45px}
+	.ci-logo-detail-box .ci-logo-box{padding:40px 20px;}
+	.ci-detail-tit{font-size:15px}
+	.ci-detail-txt{font-size:13px}
+	/* 로고 :: 설명 */
+	.ci-logo-detail-box .ci-2row-detail-list{margin:0px;}
+	.ci-logo-detail-box .ci-2row-detail-list li{float:none; width:auto; margin:0  0 1% 0;}
+	/* 로고 :: 색상 */
+	.ci-color-detail-container{margin:0}
+	.ci-color-detail-container .ci-color-box,
+	.ci-color-detail-container .sub-color-box{float:none; width:auto; margin:0 0 3% 0;}
+	.ci-color-detail-list li{width:31.33%}
+	.ci-color-detail-list li .ci-color-bg{height:25px}
+	.ci-color-detail-list li .ci-color-code,
+	.ci-color-detail-list li .ci-color-code-detail span{font-size:13px}
+	/* 로고 :: 슬로건 */
+	.ci-logo-detail-box .slogn-detail-txt-info dt{font-size:17px}
+}
+
+/* -------- Compay :: 연혁, 수상실적 -------- */
+@media all and (max-width:800px){
+	/* 연혁,수상실적 :: 상단 */	
+	.history-top-con{padding:30px 0; margin-bottom:25px; background-size:cover;}
+	.history-top-con img{height:77px}
+	.history-tab-container{margin-top:10px; min-height:200px}
+	.history-top-print{display:none;}
+}
+/* -------- 사업장소개 :: 해외지사 -------- */
+@media all and (max-width:1220px){
+	.overseas-location-container .overseas-map-con img{max-width:100%}
+}
+@media all and (max-width:1024px){
+	/* 해외지사 :: 왼쪽사진 */
+	.overseas-item .overseas-left-photo{width:250px; margin-right:30px}
+	/* 해외지사 :: 오른쪽정보 */
+	.overseas-item .overseas-info-box{width:calc(100% - 280px); padding-top:0}
+	.overseas-item .overseas-info-box dt{margin-bottom:20px;}
+}
+@media all and (max-width:800px){
+	.overseas-location-container .overseas-map-con{padding:35px 0;}
+	/* 해외지사 :: 왼쪽사진 */
+	.overseas-item .overseas-left-photo{display:none; float:none; margin-right:0px; margin-bottom:15px}
+	/* 해외지사 :: 오른쪽정보 */
+	.overseas-item{padding:15px 0;}
+	.overseas-item .overseas-info-box{float:none; width:auto;}
+	.overseas-item .overseas-info-box dt .overseas-flag{width:55px; margin-right:15px; }
+	.overseas-item .overseas-info-box dt .overseas-name{font-size:20px;}
+	.overseas-item .overseas-info-box dt .overseas-name em{font-size:10px}
+	.overseas-item .overseas-info-box li{padding-left:22px;}
+	.overseas-item .overseas-info-box li .overseas-tit i{font-size:18px;}
+	.overseas-item .overseas-info-box li p{font-size:13px;}
+}
+/* -------- Company :: 사업장소개 -------- */
+@media all and ( max-width:800px ){
+	.location-wrapper{padding-top:45px}
+	.map-wrapper-tit-box h4{font-size:21px}
+	 /* 사업장소개 :: 지도 */
+    .map-script-wrapper{height:200px; }
+    .map-script-wrapper .map-con{height:200px; }
+	.map-iframe-wrapper .map-iframe-con{padding-top:56%}
+	/* 사업장소개 :: 테이블 */
+	.map-tbl-left-img{display:none}
+	.map-tbl{float:none; width:100%}
+    .map-tbl th,.map-tbl td{padding:15px 10px; font-size:13px; line-height:1.5; vertical-align:top;}
+	.map-tbl th{width:70px;}	 
+	.map-tbl .map-detail-item{margin-top:10px}
+	.map-tbl .map-detail-item:first-child{margin-top:0;}
+	.map-tbl .map-detail-item dt,
+	.map-tbl .map-detail-item2 dt{float:none; width:auto; margin-bottom:7px}
+	.map-tbl .map-detail-item dd,
+	.map-tbl .map-detail-item2 dd{float:none ;width:auto;}
+}
+
+/* -------- Company :: 고객문의 -------- */
+@media all and (max-width:800px){
+	/* 고객문의 :: 타이틀 */
+	.cs-inquiry-tit-box{padding-bottom:30px; margin-bottom:30px;}
+	.cs-inquiry-tit-box h3{font-size:29px; margin-bottom:20px; }
+	.cs-inquiry-tit-box p{font-size:14px;}
+	/* 고객문의 :: 리스트 */
+	.cs-inquiry-list-container{margin-bottom:45px;}
+	.cs-inquiry-list-container .cs-inquiry-tit{font-size:20px; margin-bottom:15px;}
+	.cs-inquiry-list li{width:48%;}
+	.cs-inquiry-list li .cs-inquiry-inner{padding:0 15px}
+	.cs-inquiry-list li .cs-inquiry-inner dl dt{font-size:15px; height:60px;}
+	.cs-inquiry-list li .cs-inquiry-inner dl dd{padding:25px 0; font-size:13px;}
+}
+@media all and (max-width:480px){
+	/* 고객문의 :: 리스트 */
+	.cs-inquiry-list li{float:none; width:auto; margin:0 0 5% 0}
+	.cs-inquiry-list li .cs-inquiry-inner dl dd{padding:15px 0; }
+}
+
+
+/* ******************  HR  ********************** */
+/* -------- HR :: 인사제도 -------- */
+@media all and (max-width:800px){
+	/* 인사제도 :: 승진제도 */
+	.person-con-box01 .person-con01 {margin-top:35px;}
+	.person-con .person-con-tit {font-size:15px; margin-bottom:10px; }
+	.person-con .person-con-tit span {font-size:13px; margin-left:5px;}
+	.person-con-box01 .person-con01 .grade-list {margin:-2%;}
+	.person-con-box01 .person-con01 .grade-list li {width: 29%; margin:2%;}
+	.person-con-box01 .person-con01 .grade-list li:before {display:none;}
+	.person-con-box01 .person-con01 .grade-list li .grade-list-inner .bg-num {font-size: 50px; }
+	.person-con-box01 .person-con01 .grade-list li .grade-list-inner .tit {font-size:13px;}
+	.person-con-box01 .person-con01 .grade-list li .grade-list-inner .tit-en {font-size:12px; margin-top:3px;}
+	.person-con-box01 .person-con02 {margin-top:45px;}
+	.person-con-box01 .person-con02 .left-con, .person-con-box01 .person-con02 .right-con {float:none; width:100%; padding-right:0;}
+	.person-con-box01 .person-con02 .right-con {margin-top:20px;}
+	.person-con-box01 .person-con02 .inner-con {padding:20px 0;}
+	.person-con-box01 .person-con02 .inner-con img {height:33px;}
+	.person-con-box01 .person-con02 .inner-con .txt-box .tit {font-size:13px; }
+	.person-con-box01 .person-con02 .inner-con .txt-box .txt {font-size:13px; line-height: 23px; margin-top:5px;}
+	/* 인사제도 :: 복리후생 */
+	.person-con-box02 {margin-top: 72.5px;}
+	.person-con-box02 .person-con {padding-top:30px;}
+	.person-con-box02 .person-con-list li  {}
+	.person-con-box02 .person-con-list li dl {/* padding: 20px 0; */}
+	.person-con-box02 .person-con-list li dl dt {min-width:80px;}
+	.person-con-box02 .person-con-list li dl dt img {height:34.3px;}
+	.person-con-box02 .person-con-list li dl dd .txt-box {display:block; height: auto; padding:10px 10px 10px 0; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box;  }
+	.person-con-box02 .person-con-list li dl dd .txt-box .tit {display:block; width:100%; font-size:13px; line-height:24px; text-align:left;  }
+	.person-con-box02 .person-con-list li dl dd .txt-box .txt {display:block;  font-size:13px; line-height:24px; }
+
+}
+
+@media all and (max-width:480px){
+	.person-con-box01 .person-con01 .grade-list {margin: 0;}
+	.person-con-box01 .person-con01 .grade-list li {float:none;width: 100%; margin:2% 0;}
+}
+
+/* -------- HR :: 직무소개 -------- */
+@media all and (max-width:800px){
+	/* 직무소개 :: 사이드바 */
+	.job-side-bar {width: 140px;}
+	.job-side-bar .job-1dep > li > a span {height: 42px;}
+	.job-side-bar .job-1dep > li > a span em {padding: 0 10px; font-size: 13px; line-height:23px;} 
+	.job-side-bar .job-1dep > li i {font-size:15px; right:10px; margin-top:-7.5px; }
+	.job-side-bar .job-1dep .job-2dep {padding: 0 10px;}
+	.job-side-bar .job-1dep .job-2dep > li a span  {height: 35px;}
+	.job-side-bar .job-1dep .job-2dep > li a span em {font-size:13px;}
+	/* 직무소개 :: 컨텐츠 */
+	.job-page-area {width: calc(100% - 140px); padding-left: 3%;}
+	.job-page .tit-box {padding-bottom:16px; }
+	.job-page .tit-box .job-2dep-tit { font-size: 19px; line-height:30px; }
+	.job-page .tit-box .job-1dep-tit {font-size: 14px; line-height:30px; }
+	.job-page .job-con {height: 84px;}
+	.job-page .job-con .txt-wrap .job-con-tit {font-size:15px; line-height:26px;}
+	.job-page .job-con .txt-wrap .job-con-txt {font-size:13px; line-height:26px; }
+	.job-page .job-con-box02 {margin-top: 15px;}
+}
+@media all and (max-width:480px){
+	/* 직무소개 :: 사이드바 */
+	.job-side-bar {width:100%; float:none; }
+	.job-page-area {width:100%; padding:0; float:none;}
+}
+
+/* -------- HR :: 채용공고 -------- */
+@media all and (max-width:800px){
+	.recruit-page .small-tit {font-size:14px; line-height:24px; }
+	.recruit-process .list {margin:-2% -2.1%; }
+	.recruit-process .list li {width: 29%; margin: 2% 2.1%; }
+	.recruit-process .list li:before {display:none;}
+	.recruit-process .list .list-inner {padding: 15px 0;}
+	.recruit-process .list .list-inner dt img {height: 33.6px; }
+	.recruit-process .list .list-inner dl dd .txt-box {height:50px; margin-top:5px;}
+	.recruit-process .list .list-inner dl dd .txt-box .bg-num {font-size:50px;}
+	.recruit-process .list .list-inner dl dd .txt-box .txt {font-size:13px;}
+	.recruit-process .step {margin-top:20px;}
+	.recruit-process .step li dl {padding:15px;}
+	.recruit-process .step li dl dt .num {font-size:14px;}
+	.recruit-process .step li dl dd p {font-size:13px;}
+	.recruit-process .step li dl dd p span {padding-left: 7px;}
+	.recruit-process .step li dl dd p em {padding-left:20px; display:block; margin-top:5px;}
+	.recruit-page .recruit-con {padding-bottom:40px;}
+	.recruit-page .recruit-con > dl dt {float:none; width:100%;}
+	.recruit-page .recruit-con > dl dd {float:none;width:100%;}
+	.recruit-page .recruit-con > dl dd .txt-box .txt {font-size:13px; line-height: 26px;}
+	.recruit-page .recruit-con > dl dd .txt-box .txt2{font-size:11px; }
+	.recruit-page .recruit-con > dl dd .txt-box .txt2 br{display:block}
+	.recruit-bottom-con {padding:15px 0;}
+	.recruit-bottom-con .txt {font-size:15px;}
+	.recruit-bottom-con .txt span {padding-left: 30px;}
+	.recruit-bottom-con .txt span:before {height: 16px; margin-top:-8px; left: 15px;}
+	.recruit-btn-box {margin-top:25px;}
+	.recruit-btn-box ul  {margin:0 -1%;}
+	.recruit-btn-box ul li {width: 47.5%; height: 49px; margin:0 1%;}
+	.recruit-btn-box ul li span em {font-size:13px;line-height:18px; padding: 0 5px;}
+	.recruit-notice-tit {font-size: 17px; padding-bottom: 37.5px;}
+	.recruit-notice-tit:before {bottom: 18px;}
+}
+@media all and (max-width:480px){
+	.recruit-process .list {margin: 0; }
+	.recruit-process .list li {float:none; width: 100%; margin: 2% 0; }
+}
+
+
+
+/* ****************** 윤리경영  ********************** */
+/* -------- 윤리경영 :: 공통 -------- */
+@media all and (max-width:1220px){
+	/* 윤리경영 공통 */	
+	.ethical-txt-box-detail dl{margin-top:25px}
+	.ethical-txt-box-detail dt{float:none; width:auto; margin-bottom:15px;}
+	.ethical-txt-box-detail dd{float:none; width:auto;}
+}	
+@media all and (max-width:800px){
+	.ethical-txt-box-detail dt{font-size:13px;}
+	.ethical-txt-list-con li{font-size:13px;}
+}
+/* -------- 윤리경영 :: 임직원 행동지침 -------- */
+@media all and (max-width:800px){
+	.employee-top-con p{font-size:31px}
+}
+@media all and (max-width:640px){
+	.employee-top-con:before,
+	.employee-top-con:after{display:none}
+	.employee-top-con p{font-size:18px; padding:15% 15px}
+}
+
+/* -------- 윤리경영 :: 신고서작성 및 확인 -------- */
+@media all and (max-width:1220px){
+	/* 신고서작성 :: 상단 */
+	.decal-caution-txt-list li{min-width:auto; width:32.33%}
+}
+@media all and (max-width:800px){
+	/* 신고서작성 :: 상단 */
+	.declaration-top-txt{margin-bottom:40px;}
+	.decla-cuation-txt-box{margin-bottom:30px}
+	.decla-cuation-txt-box .decla-cuation-txt{font-size:13px; margin-top:10px; line-height:1.4}
+	.decal-caution-txt-list li{height:40px; float:none; width:100%; margin:0; margin-bottom:5px; font-size:13px;}
+
+	/* 신고서 작성 :: 신고서작성폼 */
+	.decalaration-write-box h4{font-size:23px;}
+	.decalaration-write-txt{font-size:13px }
+	.decalaration-write-txt br{display:block}
+}
+
+/* -------- 윤리경영 :: 분쟁광물 -------- */
+@media all and (max-width:1024px){
+	.dispute-img-con img{max-width:45%}
+}
+@media all and (max-width:800px){
+	.dispute-txt-top-box{margin-bottom:35px}
+	.dispute-txt-item dt{font-size:16px;}
+	.dispute-txt-item dd{font-size:13px}
+	.dispute-img-con{margin-top:20px}
+}
+@media all and (max-width:480px){
+	.dispute-img-con img{max-width:80%}
+	.dispute-img-con img:first-child{margin-bottom:10px}
+
+}
+
+
+/* -------- 200207 계열사 수정  -------- */
+ @media all and (max-width:1220px){
+	#subsidiaryList .subsidiary-list-con.fixed{margin-left:0; left:15px;}
+ }
+ @media all and (max-width:1024px){
+	/* 직무소개 :: 사이드바 */
+	#subsidiaryList {width: 100%; height:60px;}
+	#subsidiaryList .subsidiary-list-con{width:auto; right:0; z-index:11;}
+	#subsidiaryList .subsidiary-list-con > li > a span {height: 42px;}
+	#subsidiaryList .subsidiary-list-con > li > a span em {padding: 0 10px; font-size: 13px; line-height:23px;} 
+	#subsidiaryList .subsidiary-list-con > li i {font-size:15px; right:10px; margin-top:-7.5px; }
+
+	/* 직무소개 :: 사이드바 */
+	#subsideiaryCon{width: calc(100% - 140px); padding-left: 3%;}
+
+	
+	/* 직무소개 :: 사이드바 */
+	#subsidiaryList {width:100%; float:none; }
+	/* 직무소개 :: 컨텐츠 */
+	#subsideiaryCon{float:none; width:auto; padding-left: 0%; }
+	 .subsideiary-wrapper{margin-top:50px;}
+
+
+	.subsidiary-list-con{display:none;}
+	
+	#subsidiaryMobile{position:relative; width:100%; display:block; height:45px;z-index:11}
+	#subsidiaryMobile .side-menu-inner{position:absolute; top:0px; left:0px; right:0px;;height:45px; background-color:#222 }
+	#subsidiaryMobile .side-menu-inner.fixed{position:fixed; top:50px; left:15px; right:15px; }
+	#subsidiaryMobile .subsidiary-list-m-con{position:relative;}
+	#subsidiaryMobile .subsidiary-list-m-con > .cur-location{position:relative; display:block; height:44px; padding:0 30px 0 15px; }
+	#subsidiaryMobile .subsidiary-list-m-con > .cur-location span{display:block; white-space:nowrap; overflow:hidden; font-size:15px; text-overflow:ellipsis; line-height:44px; color:#fff; font-weight:400; font-size:15px;}
+	#subsidiaryMobile .subsidiary-list-m-con > .cur-location .arrow{position:absolute; top:50%; right:10px; width:20px; height:20px;margin-top:-8px; font-size:20px; color:#fff;}
+	#subsidiaryMobile .subsidiary-list-m-con > .cur-location .arrow i{color:#fff;}
+	#subsidiaryMobile .subsidiary-list-m-con > .cur-location.open .arrow{transform:rotate(-180deg); margin-top:-10px;}
+	
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con{display:none; position:absolute; top:44px; left:0px; right:0px;; background-color:#fff; border:1px solid #ddd; z-index:11; padding:0 10px; }
+	#subsidiaryMobile .subsidiary-list-m-con.location1 .location-menu-con{width:calc(100% - 1px)}
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con li{position:relative; border-top:1px solid #ddd;}
+
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con li:first-child{border-top:0}
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con li a{display:block; height:35px; line-height:35px; word-break:keep-all; color:#aaa;}
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con li a .gnb-icon{position:absolute; top:5px; right:10px; }
+	#subsidiaryMobile .subsidiary-list-m-con .location-menu-con li.on a{color:#ed1c24; font-weight:700;}
+
+
+	 .subsidiary-list-m-con{}
+	
+}
+
+
+/* ************ 200218 NH추가 ************ */
+/* -------- 비전 :: 비전 -------- */
+@media all and (max-width: 1024px){
+	.vision-container .vision-con-list .txt-box .txt br {display:none;}
+}
+@media all and (max-width:800px){
+	.vision-container .vision-con-list li {float:none; width:100%; padding: 20px 15px; border:0; border-top: 1px solid #ddd;}
+	.vision-container .vision-con-list .item01 {border-left: 0}
+	.vision-container .vision-con-list .item03 {border-bottom: 1px solid #ddd;}
+	.vision-container .vision-con-list .tit-box .num {font-size:14px; }
+	.vision-container .vision-con-list .tit-box .tit01 {font-size:17px;  margin-top: 10px;}
+	.vision-container .vision-con-list .tit-box .tit02 {font-size:13px; margin-top:5px;}
+	.vision-container .vision-con-list .icon {font-size:14px; margin-top:15px;}
+	.vision-container .vision-con-list .txt-box {margin-top:12px; }
+	.vision-container .vision-con-list .txt-box .txt {font-size:13px; line-height:24px;}
+}
+/* -------- 비전 :: 경영정신 -------- */
+@media all and (max-width:800px){
+	.ideo-container .ideo-img {margin: 25px 0; }
+	.ideo-container .ideo-con-list .ideo-con {line-height:24px; padding: 20px 0; }
+	.ideo-container .ideo-con-list .ideo-con .tit-box {float:none; width:100%;}
+	.ideo-container .ideo-con-list .ideo-con .tit-box .tit {font-size: 17px;} 
+	.ideo-container .ideo-con-list .ideo-con .txt-box {float:none; width:100%; margin-top: 10px; }
+	.ideo-container .ideo-con-list .ideo-con .txt-box .txt {font-size:14px; }
+}
+/* -------- 비전 :: 핵심가치  -------- */
+@media all and (max-width:800px){
+	.value-container {margin-bottom: 60px;}
+	.value-container .value-con-list  {margin-top:29px;}
+	.value-container .value-con-list .item .icon-con {text-align:center; width: 91px; }
+	.value-container .value-con-list .item .icon-con img {width:100%; max-width:100%;}
+	.value-container .value-con-list .item .tit-con {padding: 10px 0; width:115.5px; }
+	.value-container .value-con-list .item .tit-con .tit {font-size:17px; }
+	.value-container .value-con-list .item .txt-con  {padding: 0; width:calc(100% - 280.5px);}
+	.value-container .value-con-list .item .txt-con .txt {font-size: 13px; line-height:24px; }
+	.value-container .value-con-list .item .txt-con .txt:before {top:9px;}
+}
+
+@media all and (max-width:640px){
+	.value-container .value-con-list .item .value-con-inner, .value-container .value-con-list .item .icon-con, .value-container .value-con-list .item .tit-con,.value-container .value-con-list .item .txt-con {width:100%; display:block; }
+	.value-container .value-con-list .item .value-con-inner  {height:auto; padding: 30px 15px; }
+	.value-container .value-con-list .item .icon-con img {width:auto; max-width:91px;}
+	.value-container .value-con-list .item .txt-con .txt br {display:none;}
+}
+
+
+/* ************ 220211 환경안전보건 NH추가 ************ */
+@media all and (max-width:800px){
+	.health-con .tit {font-size:29px;}
+	.health-con .txt {font-size:14px; margin-top:9px;}
+	.health-con.con01 .img-box {margin-top:50px;}
+	.health-con.con02 {margin-top:72px;}
+	.health-con.con03 {margin-top:90px; margin-bottom:50px;}
+	.health-con.con03 .img-box {margin-top:25px;}
+	.health-certifi-list li {margin:0 5px}
+	.health-certifi-list li dd {font-size:14px; margin-top:10px;}
+}
