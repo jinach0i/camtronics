@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안녕</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Camtronix</title>
+    <!-- FAVICON: -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <!-- FULLPAGE: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.css" integrity="sha512-FKlWnaJrtBEqH+gNy8kvp+/61S+8iOKb5tG+EKCQ3Fc3iUYr9MvnywpkZBcuNKrxQxlnZYpNwDgkZ2atX7wVVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SLICK: -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- AOS: -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- JQUERY: -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- FONTAWSOME: -->
+    <script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
+    <!-- FULLPAGE: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js" integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/vendors/easings.min.js" integrity="sha512-SrKslwu6IjHEo/8mAOtkoUOT3MzHCEOFWktrC8BNtjPuBBYLYjg1y/Marat34uYfOfxDMLEwy8DLArWEVc2i+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/fullpage.js" defer></script>
+    <!-- SLICK: -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick1.js" defer></script>
+    <!-- AOS: -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/common1.js" defer></script>
+   
 </head>
 <body>
     <div id="skip">
@@ -19,20 +59,21 @@
     </div>
     <div id="wrap">
         <div id="container">
-            <section id="slide1">
+            <section id="main" class="section">
                 <header id="header">
                     <div class="menubg"></div>
                     <div class="header-inner-wrap">
                         <div class="header-inner">
-                            <h1 class="logobox"><a href="http://www.chemtronics.co.kr/kr/"><img src="./img/common/logo.png" alt="켐트로닉스"></a></h1>
+                            <h1 class="logobox"><a href="http://www.chemtronics.co.kr/kr/"><img
+                                        src="./img/common/logo.png" alt="켐트로닉스"></a></h1>
                             <div class="utilbox">
-                                <details  class="family">
+                                <details class="family">
                                     <summary>FAMILY</summary>
                                     <span>위츠</span>
                                     <span>자율주행사업</span>
                                     <span>비욘드아이</span>
                                 </details>
-                                <details  class="lang">
+                                <details class="lang">
                                     <summary>KOR</summary>
                                     <span>ENG</span>
                                     <span>CHI</span>
@@ -73,24 +114,77 @@
                     <button class="mob-menu-btn"></button>
                     <nav class="gnb-mob"></nav>
                 </header>
-                <div class="contents"></div>
+                <div class="contents">
+                    <ul class="slick-slider1">
+                        <li><img src="./img/main/main_visual_01.jpg" alt="slide1-1"></li>
+                        <li><img src="./img/main/main_visual_02.jpg" alt="slide1-2"></li>
+                        <li><img src="./img/main/main_visual_03.jpg" alt="slide1-3"></li>
+                        <li><img src="./img/main/main_visual_04.jpg" alt="slide1-4"></li>
+                    </ul>
+                </div>
                 <div class="scrollbox"></div>
                 <div class="controllerbox"></div>
             </section>
-            <section id="slide2">
-                <div class="frame">
-
-                </div>
+            <section id="about" class="section">
                 <div class="contents">
-                        
+                    <div class="left">
+                        <ul class="slick-slider2">
+                            <li><a href="#"><img src="./img/main/main_section2_slide_01.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./img/main/main_section2_slide_02.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./img/main/main_section2_slide_03.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./img/main/main_section2_slide_04.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <div class="company">
+                                <p class="title1-black">Company</p>
+                                <ul class="list-black">
+                                    <li><a href="http://www.chemtronics.co.kr/kr/company/ceo.php"><span>CEO인사말</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/company/vision.php"><span>비전</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/company/history.php"><span>연혁/수상실적</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/company/location.php"><span>사업장 소개</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/company/subsidiary.php"><span>계열사 소개</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                </ul>
+                            </div>
+                            <div class="ir">
+                                <p class="title1">IR</p>
+                                <ul class="list-white">
+                                    <li><a href="http://www.chemtronics.co.kr/kr/ir/ir_01.php"><span>주가정보</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/ir/ir_02.php"><span>재무정보</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/ir/ir_03.php"><span>결산정보</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/ir/ir_04.php"><span>공시정보</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                    <li><a href="http://www.chemtronics.co.kr/kr/ir/ir_05.php"><span>IR 자료실</span><em class="arrow"><i class="fa-solid fa-chevron-right"></i></em></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div>
+                            </div>
+                            <p class="title1" data-aos="fade-up" >Automated Driving</p>
+                                <p class="description" data-aos="fade-up">
+                                    자율주행에서 필수적으로 갖추어야 할 핵심인 V2X / WAVE기술의 개발
+                                </p>
+                        </div>
+                </div>
                 </div>
             </section>
-            <section id="slide3">
-                <div class="frame">
-
-                </div>
+            <section id="strength" class="section">
                 <div class="contents">
-                        
+                    <div class="colline-wrap"></div>
+                    <div class=""></div>
+                </div>
+            </section>
+            <section id="news" class="section">
+                <div class="contents">
+                    <div class="colline-wrap"></div>
+                    <div class=""></div>
+                </div>
+            </section>
+            <section id="recruitment" class="section">
+                <div class="contents">
+                    <div class="colline-wrap"></div>
+                    <div class=""></div>
                 </div>
             </section>
             <footer id="footer">
@@ -118,4 +212,5 @@
 
     </div>
 </body>
+
 </html>
