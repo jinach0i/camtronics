@@ -2,7 +2,8 @@
 /* COMMON: */
 @import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
-body{font-family: 'Nanum Gothic', sans-serif;}
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap');
+body{font-family: 'Play', 'Nanum Gothic','Georgia', sans-serif;}
 a{color: white;}
 img{max-width: 100%;}
 .slick-slide img{height: 100vh;}
@@ -14,7 +15,6 @@ img{max-width: 100%;}
 .description-white{color: white; font-size: 16px; line-height: 1.4; letter-spacing: -0.5px; opacity: .6; margin-top: 20px;}
 .title1-black{font-size: 38px; font-weight: 700; letter-spacing: -2px; z-index: 1; color: #222;  margin-bottom: 30px;}
 .title1-black+.description{line-height: 1.5; font-size: 16px; opacity: 0.6; margin-top: 17px; color: black;}
-.fa-solid{float: right;}
 #wrap{overflow: hidden; width: 100%;}
 #container>section{height: 100vh;}
 
@@ -24,17 +24,58 @@ header#header .header-inner-wrap{height: 100px; background-color: transparent; t
 #header:hover .header-inner-wrap{background-color: white;}
 #header .header-inner-wrap .header-inner{position: relative; display: flex; justify-content: space-between; padding: 0 40px; margin: 0 auto;}
 #header .header-inner-wrap .header-inner .logobox{line-height: 115px;}
-#header .header-inner-wrap .header-inner .utilbox{display: flex; justify-content: space-around;}
+#header .header-inner-wrap .header-inner .utilbox{display: flex; justify-content: space-around; line-height: 30px; align-items: center; z-index: 10;}
+#header .header-inner-wrap .header-inner .utilbox summary{position: relative;}
+#header .header-inner-wrap .header-inner .utilbox summary::marker{content: ''; display: none;}
+#header .header-inner-wrap .header-inner .utilbox summary::before{content: '▼'; position: absolute; right: 0; padding-right: 15%;}
+#header .header-inner-wrap .header-inner .utilbox details:first-child[open] span{background-color: white;}
+#header .header-inner-wrap .header-inner .utilbox details:last-child[open],#header .header-inner-wrap .header-inner .utilbox details:last-child[open] span{background-color: #000;}
+#header .header-inner-wrap .header-inner .utilbox details:last-child[open] span:hover{font-weight: bold; background-color: #888;}
+#header .header-inner-wrap .header-inner .utilbox .family{background-color: white; border: 1px solid white; width: 108px; height: 28px; text-align: center; margin-right: 10px;}
+#header .header-inner-wrap .header-inner .utilbox .family span{width: 108px; height: 28px; display: block; background-color: white; border: 1px solid white;}
+#header .header-inner-wrap .header-inner .utilbox .lang{border: 1px solid white; background-color: transparent; color: white; width: 68px; height: 28px; text-align: center;}
+#header .header-inner-wrap .header-inner .utilbox .lang span{display: block; width: 68px;height: 28px; transform: translate(-1px,-1px); border-right: 1px solid white; border-left: 1px solid white;}
+#header .header-inner-wrap .header-inner .utilbox .lang span:hover{background-color: rgba(255, 255, 255, .2);}
+#header .header-inner-wrap .header-inner .utilbox .lang span:last-child{border-bottom: 1px solid white;}
 #header .header-inner-wrap nav{width: 100%; position: absolute; top: 0; left: 0; right: 0;}
-#header .header-inner-wrap nav .bg{position: absolute; top: 100px; left: 0; right: 0; width: 100%; height: 0; z-index: 8; background-color: white; opacity: 0;}
+#header .header-inner-wrap nav .bg{position: absolute; top: 100px; left: 0; right: 0; width: 100%; height: 250px; z-index: 1; opacity: 1;}
 #header:hover nav .bg{height: 250px; opacity: 1; top: 100px; left: 0; border-top: 1px solid #ddd; transition: all .4s;}
-#header .header-inner-wrap nav ul{display: flex; margin-left: 327px; max-width: 1200px;}
-#header .header-inner-wrap nav ul li{text-align: center;}
-#header .header-inner-wrap nav ul li a{font-size: 18px; color: white; font-weight: bold; margin: 0 30px; height: 100px; line-height: 100px; transition: all .5s; }
-#header:hover .header-inner-wrap nav ul li a{color: #222;}
-#header .header-inner-wrap nav ul li:hover a{color: #ed1c24;}
+#header .header-inner-wrap nav>ul{display: flex; margin-left: 327px; max-width: 1200px;}
+#header .header-inner-wrap nav>ul li{text-align: center; }
+#header .header-inner-wrap nav>ul li a{font-size: 18px; color: white; font-weight: bold; margin: 0 30px; height: 100px; line-height: 100px; transition: all .5s; display: block;}
+#header:hover .header-inner-wrap nav ul li a{color: #222; position: relative;}
+#header .header-inner-wrap nav>ul li:hover a{color: #ed1c24;}
+#header .header-inner-wrap nav>ul li .depth2{position: absolute; top: 100px; left: 0; width: 100%; padding: 40px 0; z-index: 4; visibility:hidden; display: none; background-color: #eee;}
+#header .header-inner-wrap nav>ul li .depth2 .inner{display: flex; justify-content: center; margin-left: 327px; max-width: 1200px; height: 170px;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left{width: 50%; height: 170px;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul{max-height: 170px; width: 100%; display: flex; flex-wrap: wrap;}
+#header .header-inner-wrap nav>ul li:first-child .depth2 .inner .left ul li{width: calc(100%/4); height: 50px; padding-right: 20px; text-align: left;}
+#header .header-inner-wrap nav>ul li:not(:first-child) .depth2 .inner .left ul li{width: calc(100%/3); height: 50px; padding-right: 20px; text-align: left;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul li a{display: flex; justify-content: space-between; width: 100%; height: 50px; font-weight: normal; line-height: 50px; align-items: center; color: #888; border-bottom: 1px solid #e5e5e5; font-size: 15px; letter-spacing: -.5px;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul li a::before{content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: #ed1c24; transition: all .4s; -webkit-transition: all .4s; -moz-transition: all 0.5s; -o-transition: all 0.5s; -ms-transition: all 0.5s;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul li a:hover{color:#ed1c24;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul li a:hover::before{width: 100%;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .left ul li a span{display: block; height: 50px; padding-left: 13px;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .right{width: 50%; display: flex; justify-content: center; height: 170px;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .right .titlebox{width: 50%; background-color: white;}
+#header .header-inner-wrap nav>ul li .depth2 .inner .right .titlebox .title1-black{font-size: 35px; margin-bottom: 0px; text-align: left;  padding: 0 30px; font-weight: bold; height: 50%;} 
+#header .header-inner-wrap nav>ul li .depth2 .inner .right .titlebox .description{color: #aaa; font-size: 13px; line-height: 1.53; letter-spacing: -0px; text-align: left;  padding: 0 30px; margin-top: 0; height: 50%;}
+#header .header-inner-wrap nav>ul li:last-child .depth2 .inner .right .titlebox .title1-black{font-size: 30px; font-weight: 600;}
+#header .header-inner-wrap nav ul li:first-child .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu1_img.jpg') no-repeat 0% 50%/cover; height: 170px;  width: 50%;}
+#header .header-inner-wrap nav>ul li:hover .depth2{visibility: visible; border-top: 1px solid #e5e5e5; display: block;}
+#header .header-inner-wrap nav>ul li:nth-child(2) .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu2_img.jpg') no-repeat 0% 50%/cover; height: 170px; width: 50%;}
+#header .header-inner-wrap nav>ul li:nth-child(3) .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu3_img.jpg') no-repeat 0% 50%/cover; height: 170px; width: 50%;}
+#header .header-inner-wrap nav>ul li:nth-child(4) .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu4_img.jpg') no-repeat 0% 50%/cover; height: 170px; width: 50%;}
+#header .header-inner-wrap nav>ul li:nth-child(5) .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu5_img.jpg') no-repeat 0% 50%/cover; height: 170px; width: 50%;}
+#header .header-inner-wrap nav>ul li:last-child .depth2 .inner .right .banner{background: url('../img/banners/header/gnb_menu6_img.jpg') no-repeat 0% 50%/cover; height: 170px; width: 50%;}
 /* SLIDE1-MAIN: */
 #main .contents{height: 100vh;}
+#main .contents ul{}
+#main .contents ul li{}
+#main .contents ul li img{}
+#main .contents ul li .txt{z-index: 9; position: absolute; top: 50%; left: 0;}
+#main .contents ul li .txt strong{font-size: 60px; color: white;}
+#main .contents ul li .txt p{}
 /* SLICK: */
 .slick-slide img{width: 100%; height: 100vh;}
 .slick-dots{display: flex; position: absolute; left: 5%; bottom: 15%;}
@@ -73,7 +114,7 @@ header#header .header-inner-wrap{height: 100px; background-color: transparent; t
 #about .contents .right .bottom{overflow: hidden; height: 50%; }
 
 
-#about .contents .right .bottom div{background: url('../img/main/main_section2_right_banner.jpg') no-repeat 50% 50%/cover; width: 100%; height: 50vh; transition: all .4s; }
+#about .contents .right .bottom .bg{background: url('../img/main/main_section2_right_banner.jpg') no-repeat 50% 50%/cover; width: 100%; height: 50vh; transition: all .4s; }
 #about .contents .right .bottom p{position: absolute; bottom: 100px; left: 100px; z-index: 2;}
 #about .contents .right .bottom:hover div{transform: scale(1.2);}
 /* SLIDE3-VALUE: */
@@ -158,7 +199,7 @@ header#header .header-inner-wrap{height: 100px; background-color: transparent; t
 #recruitment .contents .left a.download-cltemplate-btn i{height: 48px; line-height: 48px; font-size: 18px; transform: translate(-14px,2px);}
 #recruitment .contents .left a.download-cltemplate-btn:hover i{color: #222;}
 #recruitment .contents .right{width: 50%; height: 100%; position: relative; transition: all .4s;}
-#recruitment .contents .right span{background: url('../img/main/main_recruit_img.jpg') no-repeat 50% 50%; display: block; height: 500px;}
+#recruitment .contents .right span{background: url('../img/main/main_recruit_img.jpg') no-repeat 0% 50%/cover; display: block; height: 500px;}
 #recruitment .contents .right img{position: absolute; bottom: 35px; right: 35px;}
 /* FOOTER: */
 #footer{border-top: 1px solid #e5e5e5;}
